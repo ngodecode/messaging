@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arianto.messaging" >
+
+    <application>
+        <activity
+            android:name="com.arianto.messaging.list.ui.ChatList">
+        </activity>
+        <activity
+            android:name="com.arianto.messaging.chat.ui.ChatActivity"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/txtThumb"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:background="@drawable/item_thumb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/txtThumb"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="4dp"
+        android:layout_marginRight="12dp"
+        />
+
+    <TextView
+        android:id="@+id/txtSource"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textColor="#434343"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/txtThumb"
+        app:layout_constraintRight_toLeftOf="@id/txtTime"
+        app:layout_constraintTop_toTopOf="@+id/txtThumb"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginRight="12dp"
+        android:textColor="#434343"
+        app:layout_constraintLeft_toRightOf="@+id/txtThumb"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/txtThumb"
+        android:layout_marginLeft="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

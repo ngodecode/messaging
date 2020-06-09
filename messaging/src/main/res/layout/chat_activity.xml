@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.ui.ChatActivity">
+
+    <ImageButton
+        android:id="@+id/btn_send"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_message"
+        app:srcCompat="@drawable/ic_send"
+        android:contentDescription="Send"
+        android:background="@drawable/chat_input_send"
+        android:layout_marginRight="16dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="200dp"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_send"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:autofillHints="Tulis Pesan"
+        android:hint="Tulis Pesan"
+        android:background="@drawable/chat_input_text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_messages"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edt_message"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false"
+        android:layout_marginBottom="8dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
