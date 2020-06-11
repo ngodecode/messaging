@@ -7,9 +7,9 @@
     tools:context=".HomeActivity">
 
     <com.arianto.messaging.list.ui.ChatList
-        android:id="@+id/chatList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    android:id="@+id/chatList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"

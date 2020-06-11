@@ -22,8 +22,8 @@ class ChatActivity : AppCompatActivity(), ChatContract.View {
         setContentView(R.layout.chat_activity)
 
         intent.getStringExtra("userId")?.let {mUserId = it.toLowerCase()}
-        intent.getStringExtra("oppositeId")?.let {mOppositeId = it.toLowerCase()}
         intent.getLongExtra("roomType", 0)?.let {mRoomType = it}
+        intent.getStringExtra("oppositeId")?.let {mOppositeId = it.toLowerCase()}
 
         val actionbar = supportActionBar
         actionbar!!.title = mOppositeId
